@@ -1,15 +1,6 @@
-# Source Excel files (sensitive business data)
-Data/
 
 # Dependencies
 dashboard/node_modules/
-
-# Build output
-dashboard/build/
-
-# Firebase
-dashboard/.firebase/
-dashboard/.firebaserc
 
 # Environment
 .env
@@ -22,6 +13,3 @@ dashboard/.firebaserc
 # OS
 .DS_Store
 Thumbs.db
-
-# Claude session files
-.claude/
