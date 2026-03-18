@@ -61,28 +61,41 @@ export default function TACO() {
 
   const regionActive = selectedRegion.length > 0 || selectedCountry.length > 0;
 
-  // KPIs — filtered by BU only (taco_key_lines has no region field)
-  // When region filter is active, KPIs still show BU-level totals with a warning
+  // KPIs:
+  // — Net Sales: when region active, sum from taco_regional (has region); otherwise from taco_key_lines
+  // — Margin / Contribution: taco_key_lines only (no region breakdown available) → BU-level always
   const kpis = useMemo(() => {
-    if (!keyLinesData) return { netSales: null, tacoMargin: null, tacoContrib: null, marginPct: null, netSalesBud: null };
-    const rows = keyLinesData.filter((r) => matchBU(r.bu, selectedBU));
-    const findRows = (code: string) => rows.filter((r) => r.fa_line === code);
-    const netSalesRows = findRows('26');
-    const marginRows   = findRows('55');
-    const contribRows  = findRows('85');
-    const netSales    = netSalesRows.reduce((s, r) => s + r.actuals_keur, 0);
-    const netSalesBud = netSalesRows.reduce((s, r) => s + r.budget_keur, 0);
-    const tacoMargin  = marginRows.reduce((s, r) => s + r.actuals_keur, 0);
-    const tacoContrib = contribRows.reduce((s, r) => s + r.actuals_keur, 0);
-    const marginPct   = netSales !== 0 ? (tacoMargin / netSales) * 100 : null;
-    return {
-      netSales:    Math.round(netSales),
-      tacoMargin:  Math.round(tacoMargin),
-      tacoContrib: Math.round(tacoContrib),
-      marginPct:   marginPct !== null ? parseFloat(marginPct.toFixed(1)) : null,
-      netSalesBud: Math.round(netSalesBud),
-    };
-  }, [keyLinesData, selectedBU]);
+    // Net Sales from regional data when region filter is active
+    let netSales: number | null = null;
+    let netSalesBud: number | null = null;
+    if (regionActive && regionalData) {
+      const rows = regionalData.filter(
+        (r) => matchBU(r.bu, selectedBU) && matchTACOFull(r.region, selectedRegion, selectedCountry),
+      );
+      netSales    = Math.round(rows.reduce((s, r) => s + r.actuals_keur, 0));
+      netSalesBud = Math.round(rows.reduce((s, r) => s + r.budget_keur, 0));
+    } else if (keyLinesData) {
+      const rows = keyLinesData.filter((r) => matchBU(r.bu, selectedBU));
+      const netSalesRows = rows.filter((r) => r.fa_line === '26');
+      netSales    = Math.round(netSalesRows.reduce((s, r) => s + r.actuals_keur, 0));
+      netSalesBud = Math.round(netSalesRows.reduce((s, r) => s + r.budget_keur, 0));
+    }
+
+    // Margin + Contribution — BU level only (no region field in source)
+    let tacoMargin: number | null = null;
+    let tacoContrib: number | null = null;
+    let marginPct: number | null = null;
+    if (keyLinesData) {
+      const rows = keyLinesData.filter((r) => matchBU(r.bu, selectedBU));
+      tacoMargin  = Math.round(rows.filter((r) => r.fa_line === '55').reduce((s, r) => s + r.actuals_keur, 0));
+      tacoContrib = Math.round(rows.filter((r) => r.fa_line === '85').reduce((s, r) => s + r.actuals_keur, 0));
+      // use regional net sales for margin % when available (more accurate denominator)
+      const denominator = netSales ?? 0;
+      marginPct = denominator !== 0 ? parseFloat(((tacoMargin / denominator) * 100).toFixed(1)) : null;
+    }
+
+    return { netSales, tacoMargin, tacoContrib, marginPct, netSalesBud };
+  }, [keyLinesData, regionalData, selectedBU, regionActive, selectedRegion, selectedCountry]);
 
   const primaryBU = selectedBU.length > 0 ? selectedBU[0] : 'S1';
 
@@ -178,7 +191,7 @@ export default function TACO() {
       {/* Region limitation notice */}
       {regionActive && (
         <Alert severity="info" sx={{ mb: 2, fontSize: '0.8rem' }}>
-          KPI cards and P&amp;L breakdown reflect <strong>BU-level totals</strong> — the TACO source does not include a region breakdown at FA line level. The monthly revenue and BU comparison charts below are filtered by region.
+          <strong>Net Sales</strong> is region-filtered. <strong>TACO Margin</strong> and <strong>Contribution</strong> reflect BU-level totals — the TACO source does not include a region breakdown at FA line level.
         </Alert>
       )}
 
@@ -189,17 +202,17 @@ export default function TACO() {
             title={`Net Sales Total (${buLabel} YTD)`}
             value={kpis.netSales}
             targetValue={kpis.netSalesBud}
-            subtitle="Line 26 — Feb–Dec 2025"
+            subtitle={regionActive ? 'Region-filtered · Feb–Dec 2025' : 'Line 26 — Feb–Dec 2025'}
             quality={DataQuality.LIVE}
-            loading={klLoading}
+            loading={regionActive ? regLoading : klLoading}
           />
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
           <KPICard
             title={`TACO Margin (${buLabel} YTD)`}
             value={kpis.tacoMargin}
-            subtitle="Line 55"
-            quality={DataQuality.LIVE}
+            subtitle={regionActive ? 'BU-level only (no region breakdown)' : 'Line 55'}
+            quality={regionActive ? DataQuality.PARTIAL : DataQuality.LIVE}
             loading={klLoading}
           />
         </Grid>
@@ -207,8 +220,8 @@ export default function TACO() {
           <KPICard
             title={`TACO Contribution (${buLabel} YTD)`}
             value={kpis.tacoContrib}
-            subtitle="Line 85"
-            quality={DataQuality.LIVE}
+            subtitle={regionActive ? 'BU-level only (no region breakdown)' : 'Line 85'}
+            quality={regionActive ? DataQuality.PARTIAL : DataQuality.LIVE}
             loading={klLoading}
           />
         </Grid>
@@ -217,9 +230,9 @@ export default function TACO() {
             title={`TACO Margin % (${buLabel})`}
             value={kpis.marginPct}
             unit="%"
-            subtitle="Line 55 / Line 26"
+            subtitle={regionActive ? 'BU margin ÷ regional Net Sales' : 'Line 55 / Line 26'}
             quality={DataQuality.DERIVED}
-            loading={klLoading}
+            loading={regionActive ? regLoading : klLoading}
           />
         </Grid>
       </Grid>

@@ -16,6 +16,7 @@ import ErrorIcon from '@mui/icons-material/Error';
 import InfoIcon from '@mui/icons-material/Info';
 import LinkIcon from '@mui/icons-material/Link';
 import LinkOffIcon from '@mui/icons-material/LinkOff';
+import AssessmentIcon from '@mui/icons-material/Assessment';
 
 // ── Sub-components ────────────────────────────────────────────────────────────
 
@@ -28,6 +29,248 @@ const SectionHeader: React.FC<{ icon: React.ReactNode; title: string; subtitle?:
     </Box>
   </Box>
 );
+
+// ── 0. Dashboard Coverage ─────────────────────────────────────────────────────
+
+const DashboardCoverageSection: React.FC = () => {
+  const dashboardTabs = [
+    {
+      tab: 'Executive Overview',
+      covers: 'High-level OI + OB + TACO KPIs, trend charts, OB bucket pie',
+      source: 'OI monthly + OB regional + TACO by-month',
+      filters: 'BU + Region + Country + Year',
+      ppt: 'Summary view',
+    },
+    {
+      tab: 'Order Intake',
+      covers: 'Monthly OI trend, regional breakdown, business type mix, YTD KPIs',
+      source: 'oi_monthly.json + oi_ytd.json',
+      filters: 'BU + Region + Country + Year',
+      ppt: 'N/A',
+    },
+    {
+      tab: 'Order Book',
+      covers: 'OB evolution stacked bar, regional & FA group breakdown, KPIs by bucket',
+      source: 'ob_timeline + ob_regional + ob_fa',
+      filters: 'BU + Region + Country + Year',
+      ppt: 'N/A',
+    },
+    {
+      tab: 'TACO (P&L)',
+      covers: 'Net Sales / TACO Margin / Contribution KPIs, monthly revenue chart, BU comparison, P&L key lines bar chart',
+      source: 'taco_key_lines + taco_regional',
+      filters: 'BU + Region (Net Sales only) + Year',
+      ppt: 'Slides 1 & 6 (partial)',
+    },
+    {
+      tab: 'Revenue Lifecycle',
+      covers: 'Side-by-side OI → OB → TACO trend, no conversion funnel (no shared key)',
+      source: 'All three sources',
+      filters: 'BU + Region + Year',
+      ppt: 'N/A',
+    },
+    {
+      tab: 'Backlog & Projects',
+      covers: 'Project-level OB schedule, recognition timeline, top customers',
+      source: 'ob_schedule + ob_grid + ob_top_customers',
+      filters: 'BU + Region',
+      ppt: 'Slide 3 (partial)',
+    },
+    {
+      tab: 'P&L Report',
+      covers: '5 PPT-aligned pivots: OI quarterly, P&L summary, OI by region, revenue coverage, project pipeline',
+      source: 'OI monthly + TACO key lines + OB grid + OB timeline',
+      filters: 'BU + Region + Country + Year',
+      ppt: 'Slides 1, 3, 4, 5, 6',
+    },
+  ];
+
+  const pptSlides = [
+    {
+      slide: 'Slide 1',
+      title: 'Region Outlook Q1\'26 (combined P&L)',
+      location: 'TACO tab + P&L Report Pivot 2',
+      status: 'Partial — ACT/BUD/LY only, no FOR',
+      gap: 'FOR column pending for TACO',
+    },
+    {
+      slide: 'Slide 2',
+      title: 'Orders Details (project-level OI)',
+      location: 'P&L Report Pivot 5 (OB proxy)',
+      status: 'Partial — OB used as proxy, no Risk/Comments',
+      gap: 'No project-level OI data',
+    },
+    {
+      slide: 'Slide 3',
+      title: 'Revenue Details (project-level revenue)',
+      location: 'P&L Report Pivot 5',
+      status: 'Partial — OB recognition schedule',
+      gap: 'No Risk Level, no Comments field',
+    },
+    {
+      slide: 'Slide 4',
+      title: 'Total Year OI Quarterly Outlook',
+      location: 'P&L Report Pivots 1 & 3',
+      status: 'Partial — ACT/BUD/LY, FOR available in data not yet shown',
+      gap: 'FOR column ready to add',
+    },
+    {
+      slide: 'Slide 5',
+      title: 'Revenue Coverage %',
+      location: 'P&L Report Pivot 4',
+      status: 'Partial — OI used as proxy for revenue target',
+      gap: 'TACO 2026 budget not yet available',
+    },
+    {
+      slide: 'Slide 6',
+      title: 'Total Year P&L Outlook',
+      location: 'P&L Report Pivot 2',
+      status: 'Partial — ACT/BUD/LY, quarterly phasing pending',
+      gap: 'TACO FOR + quarterly breakdown pending',
+    },
+  ];
+
+  const assumptions = [
+    'OI 2025 full-year budget used as revenue target proxy in Revenue Coverage (Slide 5) — 2026 revenue budget not yet available',
+    'OB 2026 recognition schedule (ob_grid.json) used as proxy for project-level revenue pipeline (Slide 3)',
+    'TACO Net Sales KPI uses taco_regional.json when region filter is active; Margin/Contribution remain BU-level',
+    'Revenue stream FA desc groupings: Hardware / Own Licenses / 3rd Party Licenses / Impl. Services / AMS',
+    'OI MONTH FOR already available in data (13 snapshots) — not yet surfaced in P&L Report charts pending UX review',
+  ];
+
+  return (
+    <Box>
+      <SectionHeader
+        icon={<AssessmentIcon />}
+        title="Dashboard Coverage"
+        subtitle="What each tab covers, PPT slide mapping, and key assumptions"
+      />
+
+      {/* Dashboard Tabs Table */}
+      <Card sx={{ mb: 2 }}>
+        <CardContent>
+          <Typography variant="subtitle1" fontWeight={700} gutterBottom>
+            Current Dashboard Tabs (7)
+          </Typography>
+          <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mb: 2 }}>
+            All filters (BU, Region, Country, Year) are now fully wired and apply across all tabs.
+          </Typography>
+          <TableContainer>
+            <Table size="small">
+              <TableHead>
+                <TableRow sx={{ bgcolor: '#F5F7FA' }}>
+                  {['Tab', 'What It Covers', 'Key Data Source', 'Filter Support', 'PPT Equivalent'].map((h) => (
+                    <TableCell key={h} sx={{ fontWeight: 700, fontSize: '0.75rem' }}>{h}</TableCell>
+                  ))}
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {dashboardTabs.map((r, i) => (
+                  <TableRow key={i} hover>
+                    <TableCell sx={{ fontWeight: 700, fontSize: '0.78rem', whiteSpace: 'nowrap', color: '#003C7E' }}>
+                      {r.tab}
+                    </TableCell>
+                    <TableCell sx={{ fontSize: '0.75rem', maxWidth: 260 }}>{r.covers}</TableCell>
+                    <TableCell sx={{ fontFamily: 'monospace', fontSize: '0.7rem', color: '#5C6BC0', maxWidth: 200 }}>
+                      {r.source}
+                    </TableCell>
+                    <TableCell sx={{ fontSize: '0.74rem', whiteSpace: 'nowrap' }}>{r.filters}</TableCell>
+                    <TableCell>
+                      <Chip
+                        label={r.ppt}
+                        size="small"
+                        sx={{
+                          fontSize: '0.65rem',
+                          bgcolor: r.ppt === 'N/A' ? '#F5F5F5' : '#E8F5E9',
+                          color: r.ppt === 'N/A' ? '#9E9E9E' : '#2E7D32',
+                          fontWeight: r.ppt === 'N/A' ? 400 : 600,
+                        }}
+                      />
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </CardContent>
+      </Card>
+
+      {/* PPT Slides → Dashboard Mapping */}
+      <Card sx={{ mb: 2 }}>
+        <CardContent>
+          <Typography variant="subtitle1" fontWeight={700} gutterBottom>
+            PPT Slides → Dashboard Mapping
+          </Typography>
+          <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mb: 2 }}>
+            Shows which part of the dashboard corresponds to each slide in the regional PPT report structure.
+          </Typography>
+          <TableContainer>
+            <Table size="small">
+              <TableHead>
+                <TableRow sx={{ bgcolor: '#F5F7FA' }}>
+                  {['PPT Slide', 'Title', 'Dashboard Location', 'Status', 'Key Gap'].map((h) => (
+                    <TableCell key={h} sx={{ fontWeight: 700, fontSize: '0.75rem' }}>{h}</TableCell>
+                  ))}
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {pptSlides.map((r, i) => (
+                  <TableRow key={i} hover>
+                    <TableCell>
+                      <Chip
+                        label={r.slide}
+                        size="small"
+                        sx={{ bgcolor: '#E3F2FD', color: '#1565C0', fontWeight: 700, fontSize: '0.68rem' }}
+                      />
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: 600, fontSize: '0.76rem', maxWidth: 200 }}>{r.title}</TableCell>
+                    <TableCell sx={{ fontSize: '0.74rem', color: '#1565C0', maxWidth: 200 }}>{r.location}</TableCell>
+                    <TableCell>
+                      <Chip
+                        label="Partial"
+                        size="small"
+                        sx={{ bgcolor: '#FFF3E0', color: '#E65100', fontWeight: 700, fontSize: '0.65rem', mr: 0.5 }}
+                      />
+                      <Typography variant="caption" sx={{ fontSize: '0.72rem', color: '#546E7A' }}>
+                        {r.status.replace('Partial — ', '')}
+                      </Typography>
+                    </TableCell>
+                    <TableCell sx={{ fontSize: '0.73rem', color: '#C62828', maxWidth: 200 }}>{r.gap}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </CardContent>
+      </Card>
+
+      {/* Key Assumptions */}
+      <Card>
+        <CardContent>
+          <Typography variant="subtitle1" fontWeight={700} gutterBottom>
+            Key Assumptions Made
+          </Typography>
+          <Alert severity="info" sx={{ mt: 0.5 }}>
+            <AlertTitle sx={{ fontSize: '0.85rem' }}>These assumptions underpin the current dashboard implementation</AlertTitle>
+            <List dense disablePadding>
+              {assumptions.map((a, i) => (
+                <ListItem key={i} disablePadding sx={{ mb: 0.5, alignItems: 'flex-start' }}>
+                  <ListItemIcon sx={{ minWidth: 22, mt: 0.3 }}>
+                    <InfoIcon sx={{ fontSize: 13, color: '#0277BD' }} />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary={a}
+                    primaryTypographyProps={{ fontSize: '0.78rem', lineHeight: 1.5 }}
+                  />
+                </ListItem>
+              ))}
+            </List>
+          </Alert>
+        </CardContent>
+      </Card>
+    </Box>
+  );
+};
 
 // ── 1. Data Sources ───────────────────────────────────────────────────────────
 
@@ -377,66 +620,82 @@ const DataGapsSection: React.FC = () => {
   const gaps = [
     {
       id: 'G1', severity: 'error' as const, impact: 'Critical',
+      status: 'PARTIAL' as const,
       title: 'OI → OB → Revenue Conversion Funnel',
       gap: 'No shared key between the OI source (02-OI Database.accdb), OB source (OB Data for pivot.mdb), and TACO source (10-TACO database.mdb).',
       affected: 'Revenue Lifecycle tab — funnel chart cannot be drawn',
       workaround: 'Three datasets shown independently side-by-side. Cannot calculate conversion rates.',
+      currentStatus: 'Dashboard shows Revenue Coverage proxy (OI budget vs OB pipeline). Direct OI→OB→TACO linkage not possible without EDW.',
       edwFix: 'EDW resolves this by adding opportunity_id / project_key as a common FK across all three fact tables.',
     },
     {
       id: 'G2', severity: 'error' as const, impact: 'Critical',
+      status: 'PARTIAL' as const,
       title: 'TACO Forecast (FOR Column)',
       gap: 'The TACO source query (10-TACO database.mdb → "Data source pivot queries") contains three measure columns: Actuals, Budget, Actuals LY. No Forecast (FOR) column exists.',
       affected: 'TACO tab — cannot show FOR vs ACT variance. P&L forecasting not possible.',
       workaround: 'Budget used as proxy for target in TACO KPI cards.',
+      currentStatus: 'OI MONTH FOR data is available in oi_monthly.json across all 13 snapshots. TACO FOR still pending from controlling team. P&L Report currently shows ACT/BUD/LY only.',
       edwFix: 'Request TACO FOR extract from controlling team, or add FOR to Access query.',
     },
     {
       id: 'G3', severity: 'warning' as const, impact: 'High',
+      status: 'OPEN' as const,
       title: 'Business Type Dimension Missing from OB and TACO',
       gap: 'The "Type Bus D" field (Net New / Cross Selling / Feature Upselling / Volume Upselling / Transition / Upgrade & Updates) exists only in the OI source table. OB and TACO have no equivalent dimension.',
       affected: 'Cannot analyse backlog or revenue quality by business type. No "Net New vs Renewal" split in P&L.',
       workaround: 'Business type analysis limited to Order Intake tab only.',
+      currentStatus: 'Business type analysis remains limited to Order Intake tab. OB and TACO have no equivalent dimension.',
       edwFix: 'Tag OB records with business type at ingestion using the OI→CRM opportunity link.',
     },
     {
       id: 'G4', severity: 'warning' as const, impact: 'High',
+      status: 'PARTIAL' as const,
       title: 'Customer Dimension Missing from TACO',
       gap: 'TACO source table aggregates at BU × Region × FA level. No customer or company code dimension present at the record level (only Comp c — legal entity, not customer).',
       affected: 'Customer 360° tab cannot show customer-level P&L or margin. Customer revenue only available from OB Detailed.',
       workaround: 'Customer analysis uses OB Detailed only (backlog). TACO shows BU/region/FA split only.',
+      currentStatus: 'P&L Report Pivot 5 shows project-level revenue pipeline using OB Detailed as proxy. No TACO customer breakdown.',
       edwFix: 'Use SAP CO-PA customer-level extract as TACO replacement in EDW.',
     },
     {
       id: 'G5', severity: 'warning' as const, impact: 'Medium',
+      status: 'HANDLED' as const,
       title: 'TACO January 2025 Missing',
       gap: 'The TACO pivot cache contains months 2–12 (February–December 2025). Month 1 (January) is absent from the source extract.',
       affected: 'TACO YTD figures represent Feb–Dec 2025 (11 months), not full FY2025.',
       workaround: 'All TACO cards and charts are annotated as "Feb–Dec 2025". Dashboard shows partial badge.',
+      currentStatus: 'All TACO displays annotated "Feb–Dec 2025". PARTIAL badge on all TACO KPI cards. Jan 2025 excluded consistently.',
       edwFix: 'Re-extract TACO source with full FY2025 data including January.',
     },
     {
       id: 'G6', severity: 'warning' as const, impact: 'Medium',
+      status: 'OPEN' as const,
       title: 'FX Rates — Selectable Default = 1',
       gap: 'The TACO file has selectable x-rate inputs (10 ActiveX controls in VBA). All three x-rate fields (ACT, BUD, LY) default to 1.0 — effectively reporting in local currency without conversion.',
       affected: 'All TACO figures are in local currency (EUR for European entities). Multi-currency reporting not available.',
       workaround: 'All TACO values treated as EUR. Partial badge shown on TACO tab.',
+      currentStatus: 'GapPanel shown on TACO tab. All values reported as EUR as extracted. No FX conversion applied.',
       edwFix: 'Use consistent ECB/SAP exchange rates in EDW FX dimension.',
     },
     {
       id: 'G7', severity: 'info' as const, impact: 'Low',
+      status: 'PARTIAL' as const,
       title: 'OI Customer Data — Raw Cache Only',
       gap: 'Customer names (Cust c, Cust d) exist in the OI pivot cache (Cache 2, 132,953 rows) but are NOT exposed in the standard pivot views — pivot tables group by BU/Region/FA only.',
       affected: 'OI cannot be broken down by customer in the dashboard without custom parsing.',
       workaround: 'Customer analysis uses OB Detailed source for backlog. OI customer data not surfaced.',
+      currentStatus: 'P&L Report Pivot 5 (Revenue Pipeline) uses OB project-level data to show top 25 customer projects. OI customer still not directly surfaced.',
       edwFix: 'Include customer dimension in OI fact table during EDW ETL.',
     },
     {
       id: 'G8', severity: 'info' as const, impact: 'Low',
+      status: 'HANDLED' as const,
       title: 'OB Recognition Schedule — Quarter Precision Only',
       gap: 'The OB Detailed pivot records planned receipt year (Pl Rec Year) and quarter (Pl Rec Qtr) but not month. Month-level recognition scheduling is not available.',
       affected: 'Revenue recognition schedule shown at Q/Y granularity only. Monthly cash flow projection not possible.',
       workaround: 'Schedule chart shows Year × Quarter buckets.',
+      currentStatus: 'P&L Report Pivot 5 shows Q1/Q2/Q3/Q4 planned recognition from OB Detailed. Quarter precision retained as designed.',
       edwFix: 'Require month-level planned receipt date from SAP PS module in EDW.',
     },
   ];
@@ -448,9 +707,15 @@ const DataGapsSection: React.FC = () => {
     return { bg: '#E8F5E9', color: '#2E7D32' };
   };
 
+  const statusBadge = (status: 'PARTIAL' | 'OPEN' | 'HANDLED') => {
+    if (status === 'HANDLED') return { bg: '#E8F5E9', color: '#2E7D32', label: 'HANDLED' };
+    if (status === 'PARTIAL') return { bg: '#FFF3E0', color: '#E65100', label: 'PARTIAL' };
+    return { bg: '#FFEBEE', color: '#C62828', label: 'OPEN' };
+  };
+
   return (
     <Box>
-      <SectionHeader icon={<WarningAmberIcon />} title="Data Gaps" subtitle="8 known gaps identified during source analysis" />
+      <SectionHeader icon={<WarningAmberIcon />} title="Data Gaps" subtitle="8 known gaps — 2 Handled, 4 Partial, 2 Open" />
 
       <Alert severity="info" sx={{ mb: 2 }}>
         <AlertTitle>How gaps are handled in the dashboard</AlertTitle>
@@ -461,6 +726,7 @@ const DataGapsSection: React.FC = () => {
       <Grid container spacing={2}>
         {gaps.map((g) => {
           const ic = impactColor(g.impact);
+          const sb = statusBadge(g.status);
           return (
             <Grid item xs={12} md={6} key={g.id}>
               <Card sx={{ height: '100%', border: `1px solid ${g.severity === 'error' ? '#FFCDD2' : g.severity === 'warning' ? '#FFE0B2' : '#B3E5FC'}` }}>
@@ -470,7 +736,10 @@ const DataGapsSection: React.FC = () => {
                       {g.severity === 'error' ? <ErrorIcon color="error" fontSize="small" /> : g.severity === 'warning' ? <WarningAmberIcon color="warning" fontSize="small" /> : <InfoIcon color="info" fontSize="small" />}
                       <Typography variant="subtitle2" fontWeight={700}>{g.id} — {g.title}</Typography>
                     </Box>
-                    <Chip label={g.impact} size="small" sx={{ bgcolor: ic.bg, color: ic.color, fontWeight: 700, fontSize: '0.65rem' }} />
+                    <Box display="flex" gap={0.5} alignItems="center">
+                      <Chip label={sb.label} size="small" sx={{ bgcolor: sb.bg, color: sb.color, fontWeight: 700, fontSize: '0.65rem' }} />
+                      <Chip label={g.impact} size="small" sx={{ bgcolor: ic.bg, color: ic.color, fontWeight: 700, fontSize: '0.65rem' }} />
+                    </Box>
                   </Box>
                   <Divider sx={{ mb: 1 }} />
                   <List dense disablePadding>
@@ -478,6 +747,7 @@ const DataGapsSection: React.FC = () => {
                       { icon: <ErrorIcon sx={{ fontSize: 13, color: '#C62828' }} />, label: 'Gap', text: g.gap },
                       { icon: <WarningAmberIcon sx={{ fontSize: 13, color: '#E65100' }} />, label: 'Affected', text: g.affected },
                       { icon: <CheckCircleIcon sx={{ fontSize: 13, color: '#2E7D32' }} />, label: 'Workaround', text: g.workaround },
+                      { icon: <InfoIcon sx={{ fontSize: 13, color: '#1565C0' }} />, label: 'Current Status', text: g.currentStatus },
                       { icon: <SchemaIcon sx={{ fontSize: 13, color: '#1565C0' }} />, label: 'EDW Fix', text: g.edwFix },
                     ].map(({ icon, label, text }) => (
                       <ListItem key={label} disablePadding sx={{ mb: 0.5, alignItems: 'flex-start' }}>
@@ -592,7 +862,14 @@ const OpenQuestionsSection: React.FC = () => {
 
 // ── Main Tab ──────────────────────────────────────────────────────────────────
 
-const SUB_TABS = ['Data Sources', 'Data Model', 'KPI Definitions', 'Data Gaps', 'Open Questions'];
+const SUB_TABS = [
+  'Dashboard Coverage',
+  'Data Sources',
+  'Data Model',
+  'KPI Definitions',
+  'Data Gaps',
+  'Open Questions',
+];
 
 const DataOverviewTab: React.FC = () => {
   const [subTab, setSubTab] = useState(0);
@@ -612,9 +889,12 @@ const DataOverviewTab: React.FC = () => {
           </Typography>
           <Box display="flex" gap={1.5} mt={2} flexWrap="wrap">
             {[
-              '4 Excel Source Files', '3 Microsoft Access DBs',
-              '132K+ OI Records', '45K+ OB Records', '70K+ TACO Records',
-              '8 Data Gaps', '15 Open Questions',
+              '4 Excel Source Files',
+              '3 Microsoft Access DBs',
+              '8 Dashboard Tabs',
+              '5 PPT-Aligned Pivots',
+              '8 Data Gaps (2 Handled, 4 Partial, 2 Open)',
+              '15 Open Questions',
             ].map((label) => (
               <Chip key={label} label={label} size="small" sx={{ bgcolor: 'rgba(255,255,255,0.2)', color: '#fff', fontSize: '0.72rem' }} />
             ))}
@@ -631,21 +911,33 @@ const DataOverviewTab: React.FC = () => {
           sx={{ '& .MuiTab-root': { py: 1.5, fontSize: '0.82rem', fontWeight: 600, textTransform: 'none' } }}
         >
           {SUB_TABS.map((label, i) => (
-            <Tab key={i} label={label} icon={
-              [<StorageIcon fontSize="small" />, <SchemaIcon fontSize="small" />, <BarChartIcon fontSize="small" />,
-               <WarningAmberIcon fontSize="small" />, <HelpOutlineIcon fontSize="small" />][i]
-            } iconPosition="start" />
+            <Tab
+              key={i}
+              label={label}
+              icon={
+                [
+                  <AssessmentIcon fontSize="small" />,
+                  <StorageIcon fontSize="small" />,
+                  <SchemaIcon fontSize="small" />,
+                  <BarChartIcon fontSize="small" />,
+                  <WarningAmberIcon fontSize="small" />,
+                  <HelpOutlineIcon fontSize="small" />,
+                ][i]
+              }
+              iconPosition="start"
+            />
           ))}
         </Tabs>
       </Box>
 
       {/* Sub-tab Content */}
       <Box>
-        {subTab === 0 && <DataSourcesSection />}
-        {subTab === 1 && <DataModelSection />}
-        {subTab === 2 && <KpiDefinitionsSection />}
-        {subTab === 3 && <DataGapsSection />}
-        {subTab === 4 && <OpenQuestionsSection />}
+        {subTab === 0 && <DashboardCoverageSection />}
+        {subTab === 1 && <DataSourcesSection />}
+        {subTab === 2 && <DataModelSection />}
+        {subTab === 3 && <KpiDefinitionsSection />}
+        {subTab === 4 && <DataGapsSection />}
+        {subTab === 5 && <OpenQuestionsSection />}
       </Box>
     </Box>
   );

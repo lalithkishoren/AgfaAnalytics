@@ -6,6 +6,7 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import ListAltIcon from '@mui/icons-material/ListAlt';
+import AssessmentIcon from '@mui/icons-material/Assessment';
 import Header from './components/Header';
 import GlobalFilters from './components/GlobalFilters';
 import { FilterProvider } from './context/FilterContext';
@@ -16,6 +17,7 @@ import TACO from './tabs/TACO';
 import RevenueLifecycle from './tabs/RevenueLifecycle';
 import BacklogProjects from './tabs/BacklogProjects';
 import DataOverviewTab from './tabs/DataOverviewTab';
+import PLReport from './tabs/PLReport';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 const TABS = [
@@ -25,6 +27,7 @@ const TABS = [
   { label: 'TACO', icon: <BarChartIcon fontSize="small" /> },
   { label: 'Revenue Lifecycle', icon: <AccountTreeIcon fontSize="small" /> },
   { label: 'Backlog & Projects', icon: <ListAltIcon fontSize="small" /> },
+  { label: 'P&L Report', icon: <AssessmentIcon fontSize="small" /> },
   { label: 'Project Overview', icon: <InfoOutlinedIcon fontSize="small" /> },
 ];
 
@@ -120,6 +123,9 @@ export default function App() {
             <BacklogProjects />
           </TabPanel>
           <TabPanel value={activeTab} index={6}>
+            <PLReport />
+          </TabPanel>
+          <TabPanel value={activeTab} index={7}>
             <DataOverviewTab />
           </TabPanel>
         </Box>
