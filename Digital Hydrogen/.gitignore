@@ -1,6 +1,3 @@
-# Source Excel files (sensitive business data)
-Data/
-
 # Dependencies
 dashboard/node_modules/
 
