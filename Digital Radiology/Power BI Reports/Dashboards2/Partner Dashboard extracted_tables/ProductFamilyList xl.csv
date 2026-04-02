@@ -1,0 +1,95 @@
+﻿Budget Class,Product Family,PF Name,M Type Name,Modality,General it. cat. gr.,Functional area,TYPE,Main Equipment,Group,UOM
+CR Products,4008,CR Support,Service,Service (SMA),Services,Net Sales Support,Support,No,CR/Service,
+FPS Classics,4010,SCREEN PREMIUM,Consumable,SCREEN PREMIUM,ZCNS,Net Sales Hardware /,Goods,No,FPS,
+FPS Classics,4011,Screen Second line,Consumable,Screen Second line,ZCNS,Net Sales Hardware /,Goods,Yes,FPS,
+FPS Classics,4012,Screen MR,Consumable,Screen Masterrolls,ZCNS,Net Sales Hardware /,Goods,Yes,FPS,
+FPS Classics,4013,Chemicals Classics,Consumable,Chemicals Classics,ZCNS,Net Sales Hardware /,Goods,Yes,FPS,
+FPS Classics,4014,CX60,Hardware,CX60,ZHWR,Net Sales Hardware /,Goods,Yes,FPS,
+FPS Classics,4017,Other Classics Co,Consumable,Other Classics,ZCNS,Net Sales Hardware /,Goods,No,FPS,
+FPS Classics,4018,Other Classics Eq,Hardware,Other Classics,ZPHT,Net Sales Hardware /,Goods,No,FPS,
+FPS Hardcopy,4019,Drystar 5300,Hardware,Drystar 5300,ZHWR,Net Sales Hardware /,Goods,Yes,FPS,
+FPS Hardcopy,4020,Drystar AXYS,Hardware,Drystar AXYS,ZHWR,Net Sales Hardware /,Goods,Yes,FPS,
+FPS Hardcopy,4023,Hardcopy system Dry,Consumable,Hardcopy system Dry,ZCNS,Net Sales Hardware /,Goods,Yes,FPS,
+FPS Hardcopy,4025,Drystar 5503,Hardware,Drystar 5503,ZHWR,Net Sales Hardware /,Goods,Yes,FPS,
+IMG General,4031,RAD IT - 3RD PART,Hardware,RAD IT - 3RD PART,HW,Net Sales Hardware / Equi,Goods,No,DR,
+DR Products,4034,RAD IT - PACS HAR,Hardware,Others FINANCE,HW,Net Sales Hardware / Equi,Goods,No,DR/Other,
+FPS Hardcopy,4036,OTHER HARDCOPY EQ,Hardware,Others FINANCE,ZPHT,Net Sales Hardware /,Goods,No,FPS,
+DR Products,4041,CR NX SOFTWARE,Licenses,Upgrade,Software HE (P),Net Sales Licenses O,Goods,Yes for License,DR/Licenses,
+CR Products,4042,CR GENRAD FLATWARE PIP,Hardware,CR GENRAD FLATWARE,CONS,Net Sales Hardware /,Goods,No,CR,
+DR Products,4043,OTHER CR ACCES,Hardware,Accessories,Hardware,Net Sales Hardware /,Goods,No,DR/Accessories,
+FPS Classics,4044,Mammo,Consumable,Mammo,ZCNS,Net Sales Hardware /,Goods,No,FPS,
+FPS Classics,4047,Dental,Consumable,Dental,ZCNS,Net Sales Hardware /,Goods,No,FPS,
+CR Products,4065,CR GENRAD FLATWAR,Hardware,CR GENRAD FLATWARE,CONS,Net Sales Hardware /,Goods,No,CR,
+CR Products,4067,DX-M,Hardware,DX-M,HW,Net Sales Hardware / Equi,Goods,Yes,CR,
+DR Products,4071,CR NX HARDWARE,Hardware,Accessories,Hardware,Net Sales Hardware /,Goods,No,DR/Accessories,
+DR Products,4075,DR CEILING MOUNTE,Hardware,DR 600 / DX-D 600,Hardware,Net Sales Hardware /,Goods,Yes,DR/Rooms,
+DR Products,4076,DR U-ARM UNITS,Hardware,DX-D 300,Hardware,Net Sales Hardware /,Goods,Yes,DR/Rooms,
+DR Products,4080,DR 3RD PAT. MOD.,Hardware,DURAMI,Hardware,Net Sales Hardware /,Goods,Yes,DR/Mobile,
+DR Products,4081,DR 3RD PAR MOD AC,Hardware,Accessories,Hardware,Net Sales Hardware /,Goods,No,DR/Accessories,
+FPS Hardcopy,4086,MAM HARDC FILM,Consumable,MAM HARDC FILM,ZCNS,Net Sales Hardware /,Goods,Yes,FPS,
+CR Products,4090,CR MAMMO FLATWARE PIP,Hardware,CR MAMMO FLATWARE,CONS,Net Sales Hardware /,Goods,No,CR/MAMMO,
+DR Products,4099,MAM DR MODALITY,Hardware,RETROFIT,Hardware,Net Sales Hardware /,Goods,No,DR/Retrofit,
+FPS Classics,4115,Flatware CL,Consumable,Flatware CL,ZCNS,Net Sales Hardware /,Goods,No,FPS,
+FPS Classics,4116,CAWO CL,Consumable,CAWO CL,ZCNS,Net Sales Support &  Main,Goods,No,FPS/Service,
+DR Products,4120,MDS Support,Service,Service (SMA),Services,Net Sales Support,Support,No,DR/Service,
+DR Products,4123,CR IMPLEMENTATION,Implementation,Implementation,Services,Net Sales Implementa,Implementation,No,DR/Service,
+DR Products,4128,DXS - SUPPORT,Service,Service (SMA),Services,Net Sales Support,Support,No,DR/Service,
+FPS Hardcopy,4139,MDS Admis Support,Service,MDS Admis Support,ZSRV,Net Sales Hardware /,Support,No,FPS,
+FPS Hardcopy,4155,DRYSTAR 5302,Hardware,DRYSTAR 5302,ZHWR,Net Sales Hardware /,Goods,Yes,FPS,
+FPS Classics,4175,OTHERS FIN CODES KI,Service,Others FINANCE,ZCNS,Net Sales Hardware /,Goods,No,FPS,
+CR Products,4181,OTHERS CR FIN,Hardware,Others FINANCE,HW,Net Sales Hardware / Equi,Goods,No,CR/Other,
+FPS Hardcopy,4182,OTHER FIN KB,Phantom Material,Others FINANCE,ZPHT,Net Sales Hardware /,Goods,No,FPS,
+DR Products,4183,OTHERS DR FIN,Phantom Material,Others FINANCE,Phantoms General,Net Sales Hardware /,Goods,No,DR/Other,
+CR Products,4199,CR 10-X,Hardware,CR 10-X,HW,Net Sales Hardware / Equi,Goods,Yes,CR,
+DR Products,4228,Others Fin KK,Phantoms General,Others FINANCE,Phantoms General,Net Sales Support &  Main,Goods,No,DR/Other,
+DR Products,4247,Enter. Fin  Other,Phantoms General,Others FINANCE,Phantoms General,Net Sales Rentals,Goods,No,DR/Other,
+DR Products,4252,Others Fin JA,Phantom Material,Others FINANCE,Phantoms General,Net Sales Consumable,Goods,No,DR/Other,
+FPS Hardcopy,4254,OTHERS  FIN J0,Phantom Material,Others FINANCE,ZPHT,Net Sales Hardware /,Goods,No,FPS,
+DR Products,4319,SE,Licenses,License,Licences HE (NP),Net Sales Licenses O,Goods,Yes for License,DR/Licenses,
+CR Products,4322,CR MULTI PLATE DIGITIZER QUANT RENT,Service,CR MULTI PLATE DIGITIZER QUANT RENT,Services,Net Sales Support &  Main,Support,No,CR/Service,
+CR Products,4331,CR WHITE,Hardware,CR WHITE,HW,Net Sales Hardware / Equi,Goods,Yes,CR,
+CR Products,4339,CR/NDT Support,Service,CR/NDT Support,Services,Net Sales Support &  Main,Support,No,CR/Service,
+DR Products,4340,DR ACCESSORIES,Hardware,Accessories,Hardware,Net Sales Hardware /,Goods,No,DR/Accessories,
+DR Products,4341,DR IMPLEMENTATIO,Implementation,Implementation,Services,Net Sales Implementa,Implementation,No,DR/Service,
+CR Products,4371,CR DENTAL PLATES,Consumable,CR DENTAL PLATES,CONS,Net Sales Hardware /,Goods,No,CR,
+DR Products,4377,FPS SUPPORT HC DRY CONTRACTS,Service,Service (SMA),AS Services,Net Sales Support,Support,No,DR/Service,
+DR Products,4379,FPS SUPPORT CLASSICS CONTRACTS,Service,Service (SMA),AS Services,Net Sales Support,Support,No,DR/Service,
+DR Products,4380,CR SUPPORT CONTRACTS,Service,Service (SMA),Service 3rd Party,Net Sales Support,Support,No,DR/Service,
+DR Products,4381,DXS - SUPPORT CON,Service,Service (SMA),AS Service pacakges,Net Sales Support,Support,No,DR/Service,
+DR Products,4391,DR FLOOR MOUNTED,Hardware,DR 400 / DX-D 400,Hardware,Net Sales Hardware /,Goods,Yes,DR/Rooms,
+DR Products,4392,DR MOBILE UNITS,Hardware,DR 100s / DX-D 100,Hardware,Net Sales Hardware /,Goods,Yes,DR/Mobile,
+DR Products,4410,GRAVEYARD KP,Hardware,Accessories,Hardware,Net Sales Hardware /,Goods,No,DR/Accessories,
+DR Products,4431,K1 FINAN. POSTING,Hardware,Accessories,Hardware,Net Sales Consumable,Goods,No,DR/Accessories,
+DR Products,4435,DR SUPPORT CONTRACTS,Service,Service (SMA),Services,Net Sales Support,Support,No,DR/Service,
+DR Products,4436,DR GENRAD NX SW,Licenses,RETROFIT,Licences HE (NP),Net Sales Licenses O,Goods,Yes for License,DR/Licenses/Retrofit,
+DR Products,4471,OTHER DR GEN FIN,Phantom Material,Others FINANCE,Phantoms General,Net Sales Hardware /,Goods,No,DR/Other,M2
+DR Products,4472,GRAVEYARD  DR GEN,Hardware,Accessories,Hardware,Net Sales Hardware /,Goods,No,DR/Accessories,M2
+DR Products,4478,DR R&F UNITS,Hardware,DR 800 / DX-D 800,Hardware,Net Sales Hardware /,Goods,Yes,DR/R&F,M2
+DR Products,4479,WIRELESS RETROFIT,Hardware,RETROFIT,Hardware,Net Sales Hardware /,Goods,No,DR/Retrofit,Litters
+CR Products,4480,CR MAMMO FLATWARE NIP,Hardware,CR MAMMO FLATWARE,CONS,Net Sales Hardware /,Goods,No,CR/MAMMO,PCS
+CR Products,4482,CR 30-XM,Hardware,CR 30-XM,HW,Net Sales Hardware / Equi,Goods,Yes,CR,PCS
+DR Products,4488,DR RETROFIT HARDW,Hardware,RETROFIT,Hardware,Net Sales Hardware /,Goods,No,DR/Retrofit,PCS
+DR Products,4494,FPD RETROFIT,Retrofit,RETROFIT,Hardware,Net Sales Hardware /,Goods,Yes for Retrofit,DR/Rooms,M2
+DR Products,4496,WIRELESS FPD INTEGRATED,Retrofit,RETROFIT,Hardware,Net Sales Hardware /,Goods,Yes for Retrofit,DR/Rooms,M2
+CR Products,4499,CR 12-X,Hardware,CR 12-X,HW,Net Sales Hardware / Equi,Goods,Yes,CR,PCS
+CR Products,4500,CR 15-X,Hardware,CR 15-X,HW,Net Sales Hardware / Equi,Goods,Yes,CR,PCS
+DR Products,4515,FIXED FPD INTEGRA,Hardware,RETROFIT,Hardware,Net Sales Hardware /,Goods,No,DR/Retrofit,VALUES
+DR Products,4520,DR HARDWARE,Work Station,Workstation,Hardware,Net Sales Hardware /,Goods,Yes for workstation,DR/Workstation,PCS
+DR Products,4542,RAD IT-TECHNICAL,Service,Service (SMA),AS Service pacakges,Net Sales Support,Support,No,DR/Service,M2
+DR Products,4560,DX-D 100 USED,Second Hand,DX-D 100,2nd Hand,Net Sales Hardware /,Goods,Yes,DR/Mobile,PCS
+FPS Hardcopy,4580,DRYSTAR 5301,Hardware,DRYSTAR 5301,ZHWR,Net Sales Hardware /,Goods,Yes,FPS,PCS
+DR Products,4586,DR RENTAL,Service,Service (SMA),Services,Net Sales Rentals &,Support,No,DR/Service,M2
+FPS Hardcopy,4590,DRYSTAR KIOSK5302,Hardware,DRYSTAR KIOSK5302,ZHWR,Net Sales Hardware /,Goods,Yes,FPS,VALUES
+DR Products,4596,DYNAMIC PANELS,Hardware,DR 800,Hardware,Net Sales Hardware /,Goods,No,DR/R&F/Panel,PCS
+DR Products,4598,NON-MOTORIZED MOBILE,Hardware,DR 100e,Hardware,Net Sales Hardware /,Goods,Yes,DR/Mobile,VALUES
+FPS Hardcopy,4599,DRYSTAR KIOSK OPT,Hardware,DRYSTAR KIOSK OPT,ZHWR,Net Sales Hardware /,Goods,Yes,FPS,VALUES
+FPS Hardcopy,4624,DRYSTAR KIOSK5503,Hardware,DRYSTAR KIOSK5503,ZHWR,Net Sales Hardware /,Goods,Yes,FPS,PCS
+DR Products,4645,CR CHARGED IMPLEM,Implementation,Implementation,Service 3rd Party,Net Sales Implementa,Implementation,No,DR/Service,
+DR Products,4739,DR ROOM VALUE CEI,Hardware,VALORY CEILING,Hardware,Net Sales Hardware /,Goods,Yes,DR/Rooms,PCS
+DR Products,4740,DR ROOML4LCEILING,Hardware,DR 501,Hardware,Net Sales Hardware /,Goods,Yes,DR/Rooms,PCS
+DR Products,4741,DR ROOM VALUE FLO,Hardware,VALORY FLOOR,Hardware,Net Sales Hardware /,Goods,Yes,DR/Rooms,PCS
+DR Products,4742,DR ROOM L4L FLOOR,Hardware,DR 400C / DR 400I,Hardware,Net Sales Hardware /,Goods,Yes,DR/Rooms,PCS
+CR Products,4333,CR/NDT,Hardware,CR/NDT,HW,Net Sales Hardware / Equi,Goods,Yes,CR,
+CR Products,4432,K2 FINAN. POSTING,Hardware,Accessories,Hardware,Net Sales Consumable,Goods,No,DR/Accessories,
+CR Products,4304,ALTENSTADT OEM OP,Hardware,Accessories,HW,Net Sales Hardware / Equi,Goods,Yes,CR,
+CR Products,4483,SKINTELL SERVICES,Service,SKINTELL SERVICES,Services,Net Sales Support &  Main,Support,No,CR/Service,

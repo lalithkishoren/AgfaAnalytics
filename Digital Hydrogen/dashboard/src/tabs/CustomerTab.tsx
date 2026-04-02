@@ -182,7 +182,7 @@ const CustomerTab: React.FC<Props> = ({ data, filters, onNavigate }) => {
 
           {/* Charts */}
           <Grid container spacing={2} sx={{ mb: 2 }}>
-            <Grid size={{ xs: 12, md: 7 }}>
+            <Grid item xs={12} md={7}>
               <Card>
                 <CardContent>
                   <Typography variant="h6" sx={{ fontSize: '0.9rem' }} gutterBottom>Revenue by Year</Typography>

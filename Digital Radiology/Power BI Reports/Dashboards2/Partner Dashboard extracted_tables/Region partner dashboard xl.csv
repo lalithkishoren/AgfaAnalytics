@@ -1,0 +1,279 @@
+﻿Country Code,Destination,Report Country,Description,Report Group Region,IMG SubReg,Report Sub-region,Fixed Destination
+CN,CHINA,CHINA,Greater China,Intercontinental,Greater China,China,China
+CN,Greater China,CHINA,ASPAC North,Intercontinental,Greater China,China,China
+HK,HONG KONG,HONG KONG,ASPAC North,Intercontinental,Hong Kong,Hong Kong,Hong Kong
+JP,JAPAN,JAPAN,ASPAC North,Intercontinental,ASPAC North 3th Party,Rest Of ASPAC North,Japan
+KR,SOUTH KOREA,Korea (the Republic of),ASPAC North,Intercontinental,ASPAC North 3th Party,Rest Of ASPAC North,South Korea
+KR,South-Korea,Korea (the Republic of),ASPAC North,Intercontinental,ASPAC North 3th Party,Rest Of ASPAC North,South Korea
+TW,TAIWAN,TAIWAN,Greater China,Intercontinental,ASPAC North 3th Party,Rest Of ASPAC North,Taiwan
+ASEAN,ASEAN,Asean,ASPAC South,Intercontinental,Asean,Asean,Asean
+BD,BANGLADESH,BANGLADESH,Rest of Asia & Ocean,Intercontinental,Rest of ASPAC South,Rest Of ASPAC South,Bangladesh
+BT,BHUTAN,BHUTAN,Rest of Asia & Ocean,Intercontinental,Rest of ASPAC South,Rest Of ASPAC South,Bhutan
+BN,BRUNEI DARUSS.,Brunei Darussalam,ASPAC South,Intercontinental,Asean,Asean,Brunei Darussalam
+MM,BURMA,BURMA,Asean,Intercontinental,Asean,Asean,Burma
+BN,BRUNEI,BRUNEI,Asean,Intercontinental,Asean,Asean,Brunei
+KH,CAMBODIA,CAMBODIA,Asean,Intercontinental,Asean,Asean,Cambodia
+IN,INDIA,INDIA,India,Intercontinental,India,India,India
+ID,INDONESIA,INDONESIA,Asean,Intercontinental,Asean,Asean,Indonesia
+LA,LAOS,Lao People's Democratic Republic (the),ASPAC South,Intercontinental,Asean,Asean,Laos
+MY,MALAYSIA,MALAYSIA,Asean,Intercontinental,Asean,Asean,Malaysia
+MV,MALDIVES,MALDIVES,ASPAC South,Intercontinental,Rest of ASPAC South,Rest Of ASPAC South,Maldives
+MM,MYANMAR,MYANMAR,Asean,Intercontinental,Asean,Rest Of ASPAC South,Myanmar
+NP,NEPAL,NEPAL,Rest of Asia & Ocean,Intercontinental,Rest of ASPAC South,Rest Of ASPAC South,Nepal
+PH,PHILIPPINES,PHILIPPINES,Asean,Intercontinental,Asean,Asean,Philippines
+RASS,RASS,RASS,ASPAC South,Intercontinental,Rest of ASPAC South,Rest Of ASPAC South,Rass
+ASEAN,Rest of Asia & Ocean,Rest of Asia & Ocean,ASPAC South,Intercontinental,Rest of ASPAC South,Rest Of ASPAC South,Rest of ASPAC South
+ASEAN,Rest of ASPAC South,Rest of ASPAC South,ASPAC South,Intercontinental,Rest of ASPAC South,Rest Of ASPAC South,Rest of ASPAC South
+SG,SINGAPORE,SINGAPORE,ASPAC South,Intercontinental,Asean,Asean,Singapore
+LK,SRI LANKA,SRI LANKA,Rest of Asia & Ocean,Intercontinental,Rest of ASPAC South,Rest Of ASPAC South,Sri Lanka
+TH,THAILAND,THAILAND,Asean,Intercontinental,Asean,Asean,Thailand
+VN,VIETNAM,VIETNAM,Asean,Intercontinental,Asean,Asean,Vietnam
+WF,"WALLIS,FUTUNA",Wallis and Futuna,ASPAC South,Intercontinental,Asean,Oceania,Wallis and Futuna
+AF,AFGHANISTAN,AFGHANISTAN,Gulf Af PK,Intercontinental,Gulf,Middle East & Other Africa,Afghanistan
+DZ,ALGERIA,ALGERIA,Maghreb,Intercontinental,Maghreb,Africa,Algeria
+AO,ANGOLA,ANGOLA,West & Central Afric,Intercontinental,West & Central Africa,Africa,Angola
+BH,BAHRAIN,BAHRAIN,Saudi Arabia,Intercontinental,Saudi Arabia,Middle East & Other Africa,Bahrain
+BJ,BENIN,BENIN,West & Central Afric,Intercontinental,West & Central Africa,Africa,Benin
+BW,BOTSWANA,BOTSWANA,Export South-Africa,Intercontinental,Export South-Africa,Africa,Botswana
+BF,BURKINA FASO,BURKINA FASO,West & Central Afric,Intercontinental,West & Central Africa,Africa,Burkina Faso
+BI,BURUNDI,BURUNDI,East & Other Africa,Intercontinental,East & Other Africa,Middle East & Other Africa,Burundi
+CM,CAMEROON,CAMEROON,West & Central Afric,Intercontinental,West & Central Africa,Africa,Cameroon
+CV,CAPE VERDE,CAPE VERDE,West & Central Afric,Intercontinental,West & Central Africa,Africa,Cape Verde
+CAR,CAR,CAR,RoW,Intercontinental,West & Central Africa,Africa,Central African Republic
+TD,CHAD,CHAD,RoW,Intercontinental,West & Central Africa,Africa,Chad
+CK,CK,CK,World Wide,Intercontinental,ROW,Rest of World others,Cook Islands
+KM,COMOROS,Comoros (the),RoW,Intercontinental,East & Other Africa,Africa,Comoros
+CI,COTE D'IVOIRE,Côte d'Ivoire,RoW,Intercontinental,West & Central Africa,Africa,Cote d'Ivoire
+CD,DEM. REP. CONGO,DEM. REP. CONGO,West & Central Afric,Intercontinental,West & Central Africa,Africa,Democratic Republic Of Congo
+WW,DIRECT EXPORT OTHERS,DIRECT EXPORT OTHERS,RoW,Intercontinental,ROW,Rest of World others,Direct Export Others
+DJ,DJIBOUTI,DJIBOUTI,RoW,Intercontinental,East & Other Africa,Middle East & Other Africa,Djibouti
+WW,East & Other Africa,East & Other Africa,RoW,Intercontinental,East & Other Africa,Rest of World others,East & Other Africa
+EG,EGYPT,EGYPT,Levant,Intercontinental,Levant,Middle East & Other Africa,Egypt
+GQ,EQUATORIAL GUIN,Equatorial Guinea,RoW,Intercontinental,West & Central Africa,Africa,Equatorial Guinea
+ER,ERITREA,ERITREA,RoW,Intercontinental,East & Other Africa,Middle East & Other Africa,Eritrea
+ET,ETHIOPIA,ETHIOPIA,East & Other Africa,Intercontinental,East & Other Africa,Middle East & Other Africa,Ethiopia
+ZA,Export South-Africa,SOUTH AFRICA,RoW,Intercontinental,CAFR,Africa,Export South-Africa
+PF,FRENC.POLYNESIA,FRANCE,Rest of World Others,Intercontinental,Rest of World Others,Africa,French Polynesia
+GA,GABON,GABON,RoW,Intercontinental,West & Central Africa,Africa,Gabon
+GM,GAMBIA,Gambia (the),RoW,Intercontinental,West & Central Africa,Africa,Gambia
+GE,GEORGIA,GEORGIA,RoW,Intercontinental,Ukraine,Europe East & South,Georgia
+GH,GHANA,GHANA,Levant,Intercontinental,Levant,Middle East & Other Africa,Ghana
+WW,GROWTH REGIONS,GROWTH REGIONS,RoW,Intercontinental,ROW,Rest of World others,Growth Regions
+GN,GUINEA,GUINEA,RoW,Intercontinental,West & Central Africa,Africa,Guinea
+GW,GUINEA-BISSAU,GUINEA,RoW,Intercontinental,West & Central Africa,Africa,Guinea-Bissau
+GULF,Gulf Af PK,Gulf Af PK,RoW,Intercontinental,DUBA,Middle East & Other Africa,Gulf
+WW,INTERNATIONAL ORGANIZATIONS,INTERNATIONAL ORGANIZATIONS,Rest of World Others,Intercontinental,Rest of World Others,Rest of World others,International Organizations
+IR,IRAN,IRAN,Iran,Intercontinental,Iran,Middle East & Other Africa,Iran
+IQ,IRAQ,IRAQ,Levant,Intercontinental,Levant,Middle East & Other Africa,Iraq
+IL,ISRAEL,ISRAEL,Ukraine IL GE,Intercontinental,Rest of World Others,Africa,Israel
+JO,JORDAN,JORDAN,Levant,Intercontinental,Levant,Middle East & Other Africa,Jordan
+KE,KENYA,KENYA,East & Other Africa,Intercontinental,East & Other Africa,Middle East & Other Africa,Kenya
+KW,KUWAIT,KUWAIT,Gulf Af PK,Intercontinental,Gulf Af PK,Middle East & Other Africa,Kuwait
+LB,LEBANON,LEBANON,Levant,Intercontinental,Levant,Middle East & Other Africa,Lebanon
+LS,LESOTHO,LESOTHO,RoW,Intercontinental,Export South-Africa,Africa,Lesotho
+LEVANT,Levant Eg Ly,Levant,Levant,Intercontinental,Levant,Middle East & Other Africa,Levant
+LR,LIBERIA,LIBERIA,RoW,Intercontinental,West & Central Africa,Africa,Liberia
+LY,LIBYA,LIBYA,Levant,Intercontinental,Levant,Middle East & Other Africa,Libya
+MG,MADAGASCAR,MADAGASCAR,East & Other Africa,Intercontinental,East & Other Africa,Middle East & Other Africa,Madagascar
+MAGHREB,Maghreb,Maghreb,Maghreb,Intercontinental,Maghreb,Africa,Maghreb
+MW,MALAWI,MALAWI,RoW,Intercontinental,Export South-Africa,Africa,Malawi
+ML,MALI,MALI,RoW,Intercontinental,West & Central Africa,Africa,Mali
+MR,MAURETANIA,Mauritania,RoW,Intercontinental,West & Central Africa,Africa,Mauretania
+MU,MAURITIUS,MAURITIUS,East & Other Africa,Intercontinental,East & Other Africa,Middle East & Other Africa,Mauritius
+MD,MOLDOVA,Moldova (the Republic of),RoW,Intercontinental,Ukraine,Europe East & South,Moldova
+MA,MOROCCO,MOROCCO,Maghreb,Intercontinental,Maghreb,Africa,Morocco
+MZ,MOZAMBIQUE,MOZAMBIQUE,RoW,Intercontinental,Export South-Africa,Africa,Mozambique
+WW,N/A,N/A,World Wide,Intercontinental,ROW,Rest of World others,N/A
+NA,NAMIBIA,NAMIBIA,Export South-Africa,Intercontinental,Export South-Africa,Africa,Namibia
+NC,NEW CALEDONIA,NEW CALEDONIA,Rest of Asia & Ocean,Intercontinental,Rest of World Others,Africa,New Caledonia
+NE,NIGER,Niger (the),RoW,Intercontinental,West & Central Africa,Africa,Niger
+NG,NIGERIA,NIGERIA,West & Central Afric,Intercontinental,West & Central Africa,Africa,Nigeria
+OM,OMAN,OMAN,Gulf Af PK,Intercontinental,Gulf Af PK,Middle East & Other Africa,Oman
+PK,PAKISTAN,PAKISTAN,Gulf Af PK,Intercontinental,Gulf Af PK,Middle East & Other Africa,Pakistan
+PS,PALESTINE,PALESTINE,Levant,Intercontinental,Levant,Middle East & Other Africa,Palestine
+PN,PITCAIRN ISLNDS,Pitcairn,Direct Export,Intercontinental,Rest of Asia & Ocean,Rest of World others,Pitcairn Islands
+QA,QATAR,QATAR,Gulf Af PK,Intercontinental,Gulf Af PK,Middle East & Other Africa,Qatar
+WW,REGION DIRECT EXPORT,REGION DIRECT EXPORT,RoW,Intercontinental,West & Central Africa,Rest of World others,Region Direct Export
+CD,REP.OF CONGO,Congo (the Democratic Republic of the),RoW,Intercontinental,West & Central Africa,Africa,Republic Of Congo
+WW,REST OF WORLD OTHERS,REST OF WORLD OTHERS,Direct Export,Intercontinental,Rest of World Others,Rest of World others,Rest Of World Others
+WW,ROW,ROW,RoW,Intercontinental,ROW,Rest of World others,Rest Of World Others
+WW,RoW Others,ROW,RoW,Intercontinental,ROW,Rest of World others,Rest Of World Others
+RW,RWANDA,RWANDA,East & Other Africa,Intercontinental,East & Other Africa,Middle East & Other Africa,Rwanda
+SH,SAINT HELENA,"Saint Helena, Ascension and Tristan da Cunha",RoW,Intercontinental,South-Africa,Africa,Saint Helena
+SA,SAUDI ARABIA,SAUDI ARABIA,Saudi Arabia,Intercontinental,Saudi Arabia,Middle East & Other Africa,Saudi Arabia
+SN,SENEGAL,SENEGAL,West & Central Afric,Intercontinental,West & Central Africa,Africa,Senegal
+SC,SEYCHELLEN,Seychelles,RoW,Intercontinental,East & Other Africa,Africa,Seychelles
+SL,SIERRA LEONE,SIERRA LEONE,RoW,Intercontinental,East & Other Africa,Africa,Sierra Leone
+SO,SOMALIA,SOMALIA,RoW,Intercontinental,East & Other Africa,Africa,Somalia
+ZA,SOUTH AFRICA,SOUTH AFRICA,South-Africa,Intercontinental,South-Africa,Africa,South Africa
+ZA,South-Africa,SOUTH AFRICA,RoW,Intercontinental,South-Africa,Africa,South Africa
+SD,SUDAN,Sudan (the),RoW,Intercontinental,East & Other Africa,Middle East & Other Africa,Sudan
+SZ,SWAZILAND,SWAZILAND,Export South-Africa,Intercontinental,Export South-Africa,Africa,Swaziland
+SY,SYRIA,Syrian Arab Republic,Levant,Intercontinental,Levant,Middle East & Other Africa,Syria
+TZ,TANZANIA,TANZANIA,Export South-Africa,Intercontinental,Export South-Africa,Africa,Tanzania
+TG,TOGO,TOGO,RoW,Intercontinental,West & Central Africa,Africa,Togo
+TN,TUNISIA,TUNISIA,Maghreb,Intercontinental,Maghreb,Africa,Tunisia
+TR,TURKEY,TURKEY,Levant,Intercontinental,Levant,Middle East & Other Africa,Turkey
+UG,UGANDA,UGANDA,RoW,Intercontinental,Export South-Africa,Africa,Uganda
+UA,UKRAINE,UKRAINE,Ukraine IL GE,Intercontinental,Ukraine,Europe East & South,Ukraine
+UA,Ukraine IL GE,UKRAINE,RoW,Intercontinental,Ukraine,Europe East & South,Ukraine
+WW,UNKNOWN,UNKNOWN,Direct Export,Intercontinental,ROW,Rest of World others,Unknown
+AE,UTD.ARAB EMIR.,UTD.ARAB EMIR.,Gulf Af PK,Intercontinental,Gulf,Middle East & Other Africa,United Arab Emirates
+AE,Utd.Arab.Emir.,UTD.ARAB EMIR.,Gulf Af PK,Intercontinental,Gulf,Middle East & Other Africa,United Arab Emirates
+WW,West & Central Afric,West & Central Afric,RoW,Intercontinental,West & Central Africa,Africa,West & Central Africa
+JO,WEST BANK OF JORDAN REGION & GAZA,JORDAN,Levant,Intercontinental,Levant,Middle East & Other Africa,West Bank Of Jordan Region & Gaza
+WW,WORLDWIDE,WORLDWIDE,Rest of World Others,Intercontinental,World Wide,Rest of World others,Worldwide
+YE,YEMEN,YEMEN,Gulf Af PK,Intercontinental,Gulf,Middle East & Other Africa,Yemen
+ZM,ZAMBIA,ZAMBIA,RoW,Intercontinental,Export South-Africa,Africa,Zambia
+ZW,ZIMBABWE,ZIMBABWE,Export South-Africa,Intercontinental,Export South-Africa,Africa,Zimbabwe
+BR,Agfa HE Brazil,BRAZIL,Brazil,Intercontinental,BRAZIL,Brazil,Brazil
+AR,ARGENTINA,ARGENTINA,La Plata,Intercontinental,CASA,South LATAM,Argentina
+AW,ARUBA,ARUBA,Caribbean,Intercontinental,CASA,North LATAM,Aruba
+BS,BAHAMAS,Bahamas (the),North Andean,Intercontinental,CASA,North LATAM,Bahamas
+BB,BARBADOS,BARBADOS,North Andean,Intercontinental,CASA,North LATAM,Barbados
+BZ,BELIZE,BELIZE,Central America,Intercontinental,CASA,North LATAM,Belize
+BM,BERMUDA,BERMUDA,Caribbean,Intercontinental,CASA,North LATAM,Bermuda
+BO,BOLIVIA,BOLIVIA,South Andean,Intercontinental,CASA,North LATAM,Bolivia
+BR,BRAZIL,BRAZIL,Brazil,Intercontinental,BRAZIL,Brazil,Brazil
+CARIBBEAN,Caribbean,Caribbean,Caribbean,Intercontinental,CASA,North LATAM,Caribbean
+KY,CAYMAN ISLANDS,Cayman Islands (the),Caribbean,Intercontinental,CASA,North LATAM,Cayman Islands
+CARIBBEAN,Central America,Central America,Caribbean,Intercontinental,CASA,North LATAM,Central America
+CL,CHILE,CHILE,South Andean,Intercontinental,CASA,South LATAM,Chile
+CL,CHILE A-G CHILENA,CHILE,South Andean,Intercontinental,CASA,South LATAM,Chile
+CO,COLOMBIA,COLOMBIA,North Andean,Intercontinental,CASA,North LATAM,Colombia
+CO,COLOMBIA AGFA LTDA.,COLOMBIA,Colombia,Intercontinental,CASA,North LATAM,Colombia
+CR,COSTA RICA,COSTA RICA,Central America,Intercontinental,CASA,North LATAM,Costa Rica
+CU,CUBA,CUBA,Caribbean,Intercontinental,CASA,North LATAM,Cuba
+CW,CURACAO,Curaçao,North Andean,Intercontinental,CASA,North LATAM,Curaçao
+DO,DOMINIC. REP.,DOMINICAN REP.,Caribbean,Intercontinental,CASA,North LATAM,Dominican Republic
+DO,DOMINIC. REP. OTHERS,DOMINICAN REP.,Caribbean,Intercontinental,CASA,North LATAM,Dominican Republic
+DO,DOMINICAN REP.,DOMINICAN REP.,Caribbean,Intercontinental,CASA,North LATAM,Dominican Republic
+MX,DUTCH ANTILLES,MEXICO,Caribbean,Intercontinental,MEXICO,Mexico,Dutch Antilles
+EC,ECUADOR,ECUADOR,North Andean,Intercontinental,CASA,North LATAM,Ecuador
+SV,EL SALVADOR,EL SALVADOR,Central America,Intercontinental,CASA,North LATAM,El Salvador
+FK,FALKLAND,FALKLAND,North Andean,Intercontinental,CASA,South LATAM,Falkland
+FK,FALKLAND ISLNDS,FALKLAND,Caribbean,Intercontinental,CASA,South LATAM,Falkland
+GD,GRENADA,GRENADA,Caribbean,Intercontinental,CASA,North LATAM,Grenada
+GT,GUATEMALA,GUATEMALA,Central America,Intercontinental,CASA,North LATAM,Guatemala
+GT,GUATEMALA OTHERS,GUATEMALA,Central America,Intercontinental,CASA,North LATAM,Guatemala
+GY,GUYANA,GUYANA,North Andean,Intercontinental,CASA,North LATAM,Guyana
+HT,HAITI,HAITI,La Plata,Intercontinental,CASA,North LATAM,Haiti
+HN,HONDURAS,HONDURAS,Central America,Intercontinental,CASA,North LATAM,Honduras
+HN,HONDURAS OTHERS,HONDURAS,Central America,Intercontinental,CASA,North LATAM,Honduras
+JM,JAMAICA,JAMAICA,Caribbean,Intercontinental,CASA,North LATAM,Jamaica
+LA PLATA,La Plata,La Plata,South Andean,Intercontinental,CASA,North LATAM,La Plata
+LATAM,Latam,Latam,Latam,Intercontinental,LATAM,North LATAM,Latam
+LATAM,Latin America & Mexi,MEXICO,Latam,Intercontinental,LATAM,Mexico,Mexico
+LATAM,Latin America & Mexico,MEXICO,Latam,Intercontinental,LATAM,Mexico,Mexico
+MX,MEXICO,MEXICO,Mexico,Intercontinental,MEXICO,Mexico,Mexico
+NI,NICARAGUA,NICARAGUA,Central America,Intercontinental,CASA,North LATAM,Nicaragua
+NI,NICARAGUA OTHERS,NICARAGUA,Central America,Intercontinental,CASA,North LATAM,Nicaragua
+NOLA,NOLA,NOLA,North Andean,Intercontinental,CASA,North LATAM,NOLA
+Noth Andean,North Andean,North Andean,North Andean,Intercontinental,CASA,North LATAM,North Andean
+PA,PANAMA,PANAMA,Central America,Intercontinental,CASA,North LATAM,Panama
+PY,PARAGUAY,PARAGUAY,La Plata,Intercontinental,CASA,South LATAM,Paraguay
+PY,PARAGUAY OTHER,PARAGUAY,La Plata,Intercontinental,CASA,South LATAM,Paraguay
+PE,PERU,PERU,South Andean,Intercontinental,CASA,North LATAM,Peru
+PE,Peru AGFA,PERU,South Andean,Intercontinental,CASA,North LATAM,Peru
+PR,PUERTO RICO,PUERTO RICO,Caribbean,Intercontinental,CASA,North LATAM,Puerto Rico
+VC,SAINT VINCENT AND THE GRENADINES,SAINT VINCENT AND THE GRENADINES,Caribbean,Intercontinental,CASA,North LATAM,Saint Vincent And The Grenadines
+South Andean,South Andean,South Andean,South Andean,Intercontinental,CASA,North LATAM,South Andean
+VC,ST. VINCENT,SAINT VINCENT AND THE GRENADINES,North Andean,Intercontinental,CASA,North LATAM,Saint Vincent And The Grenadines
+VC,ST.VINCENT,SAINT VINCENT AND THE GRENADINES,Caribbean,Intercontinental,CASA,North LATAM,Saint Vincent And The Grenadines
+SR,SURINAME,SURINAME,Caribbean,Intercontinental,CASA,North LATAM,Suriname
+TT,TRINIDAD,Trinidad and Tobago,Caribbean,Intercontinental,CASA,North LATAM,Trinidad And Tobago
+TT,"TRINIDAD,TOBAGO","TRINIDAD,TOBAGO",Caribbean,Intercontinental,CASA,North LATAM,Trinidad And Tobago
+UY,URUGUAY,URUGUAY,La Plata,Intercontinental,CASA,South LATAM,Uruguay
+VE,VENEZUELA,Venezuela (Bolivarian Republic of),North Andean,Intercontinental,CASA,North LATAM,Venezuela
+BR,XL,XL,Latam,Intercontinental,BRAZIL,Brazil,Brazil
+WW,World Wide,WORLDWIDE,World Wide,Intercontinental,World Wide,Rest of World others,Worldwide
+GR,AGFA GREECE,GREECE,Greece,Europe-Pacific,Greece,Europe East & South,Greece
+AL,ALBANIA,ALBANIA,Europe,Europe-Pacific,Hungary,Europe East & South,Albania
+AD,ANDORRA,ANDORRA,Europe,Europe-Pacific,Iberia,Iberia,Andorra
+AU,AUSTRALIA,AUSTRALIA,Oceania,Europe-Pacific,Oceania,Oceania,Australia
+AT,AUSTRIA,AUSTRIA,DACH,Europe-Pacific,DACH,DACH,Austria
+BY,BELARUS,BELARUS,Ukraine IL GE,Europe-Pacific,Russia,Europe East & South,Belarus
+BE,BELGIUM,BELGIUM,Belgium-Lux,Europe-Pacific,Belux,Europe North,Belgium
+BE,Belgium-Lux,BELGIUM,Europe,Europe-Pacific,Belux,Europe North,Belux
+BELUX,Belux,BELGIUM,Europe,Europe-Pacific,Belux,Europe North,Belux
+BA,BOSNIA-HERZ.,BOSNIA-HERZ.,Hungary,Europe-Pacific,Hungary,Europe East & South,Bosnia and Herzegovina
+BG,BULGARIA,BULGARIA,Hungary,Europe-Pacific,Hungary,Europe East & South,Bulgaria
+ES,CANARIAN ISLANDS,SPAIN,Iberia,Europe-Pacific,Iberia,Iberia,Canarian Islands
+ES,Canary Islands,SPAIN,Iberia,Europe-Pacific,Iberia,Iberia,Canarian Islands
+CE,CE,CE,Europe,Europe-Pacific,Iberia,Iberia,Canarian Islands
+HR,CROATIA,CROATIA,Hungary,Europe-Pacific,Hungary,Europe East & South,Croatia
+CY,CYPRUS,CYPRUS,Greece,Europe-Pacific,Greece,Europe East & South,Cyprus
+CZ,CZECH REPUBLIC,CZECH REPUBLIC,Hungary,Europe-Pacific,Hungary,Europe East & South,Czechia
+DACH,DACH,DACH,Europe,Europe-Pacific,DACH,DACH,DACH
+DK,DENMARK,DENMARK,Nordic,Europe-Pacific,NordPol,Europe North,Denmark
+EE,ESTONIA,ESTONIA,Nordic,Europe-Pacific,NordPol,Europe North,Estonia
+DK,FAROE,DENMARK,Nordic,Europe-Pacific,NordPol,Europe North,Faroe
+DK,FAROE ISLANDS,DENMARK,Nordic,Europe-Pacific,NordPol,Europe North,Faroe
+FJ,FIJI,FIJI,ASPAC South,Europe-Pacific,Oceania,Oceania,Fiji
+FI,FINLAND,FINLAND,Nordic,Europe-Pacific,NordPol,Europe North,Finland
+FR,FRANCE,FRANCE,France,Europe-Pacific,France,Europe North,France
+GF,FRENCH GUAYANA,FRANCE,Europe,Europe-Pacific,France,Europe North,French Guayana
+DE,GERMANY,GERMANY,DACH,Europe-Pacific,DACH,DACH,Germany
+GI,GIBRALTAR,GIBRALTAR,Europe,Europe-Pacific,Iberia,Iberia,Gibraltar
+GR,GREECE,GREECE,Greece,Europe-Pacific,Greece,Europe East & South,Greece
+GL,GREENLAND,GREENLAND,Europe,Europe-Pacific,NordPol,Europe North,Greenland
+GP,GUADELOUPE,GUADELOUPE,Europe,Europe-Pacific,France,Europe North,Guadeloupe
+GG,GUERNSEY,GUERNSEY,Europe,Europe-Pacific,UK,Europe North,Guernsey
+HU,HUNGARY,HUNGARY,Hungary,Europe-Pacific,Hungary,Europe East & South,Hungary
+IBERIA,Iberia,Iberia,Europe,Europe-Pacific,Iberia,Iberia,Iberia
+IS,ICELAND,ICELAND,Nordic,Europe-Pacific,NordPol,Europe North,Iceland
+IE,IRELAND,IRELAND,UK,Europe-Pacific,UK,Europe North,Ireland
+IT,ITALY,ITALY,Italy,Europe-Pacific,Italy,Europe East & South,Italy
+JE,JERSEY,JERSEY,Europe,Europe-Pacific,UK,Europe North,Jersey
+XK,KOSOVO,KOSOVO,Europe,Europe-Pacific,Hungary,Europe East & South,Kosovo
+LV,LATVIA,LATVIA,Europe,Europe-Pacific,NordPol,Europe North,Latvia
+LI,LIECHTENSTEIN,LIECHTENSTEIN,Europe,Europe-Pacific,DACH,DACH,Liechtenstein
+LT,LITHUANIA,LITHUANIA,Nordic,Europe-Pacific,NordPol,Europe North,Lithuania
+LU,LUXEMBOURG,LUXEMBOURG,Belgium-Lux,Europe-Pacific,Belux,Europe North,Luxembourg
+MK,MACEDONIA,Republic of North Macedonia,Europe,Europe-Pacific,Hungary,Europe East & South,North Macedonia
+MT,MALTA,MALTA,Europe,Europe-Pacific,Greece,Europe East & South,Malta
+MQ,MARTINIQUE,MARTINIQUE,Europe,Europe-Pacific,France,Europe North,Martinique
+YT,MAYOTTE,Mayotte,Europe,Europe-Pacific,France,Europe North,Mayotte
+ME,MONTENEGRO,MONTENEGRO,Europe,Europe-Pacific,Hungary,Europe East & South,Montenegro
+NL,NETHERLANDS,NETHERLANDS,Netherlands,Europe-Pacific,Netherlands,Europe North,Netherlands
+NZ,NEW ZEALAND,NEW ZEALAND,Oceania,Europe-Pacific,Oceania,Oceania,New Zealand
+NORDIC,Nordic,Nordic,Europe,Europe-Pacific,NordPol,Europe North,Nordic
+NO,NORWAY,NORWAY,Nordic,Europe-Pacific,NordPol,Europe North,Norway
+OCEANIA,Oceania,Oceania,ASPAC South,Europe-Pacific,Oceania,Oceania,Oceania
+PL,POLAND,POLAND,Poland,Europe-Pacific,NordPol,Europe East & South,Poland
+PT,PORTUGAL,PORTUGAL,Iberia,Europe-Pacific,Iberia,Iberia,Portugal
+RE,REUNION,Réunion,Europe,Europe-Pacific,France,Europe North,Reunion
+RO,ROMANIA,ROMANIA,Hungary,Europe-Pacific,Hungary,Europe East & South,Romania
+RU,Russia,Russian Federation (the),RoW,Europe-Pacific,Russia,Europe East & South,Russia
+RU,RUSSIAN FED.,RUSSIAN FED.,Russia,Europe-Pacific,Russia,Europe East & South,Russia
+BL,SAINT BARTHELEMY,SAINT BARTHELEMY,Europe,Europe-Pacific,France,Europe North,Saint Barthelemy
+MF,SAINT MARTIN,Saint Martin (French part),Europe,Europe-Pacific,France,Europe North,Saint Martin
+SM,SAN MARINO,SAN MARINO,Europe,Europe-Pacific,Italy,Europe East & South,San Marino
+RS,SERBIA,SERBIA,Hungary,Europe-Pacific,Hungary,Europe East & South,Serbia
+RS,SERBIA/MONTEN.,SERBIA,Europe,Europe-Pacific,Hungary,Europe East & South,Serbia
+SK,SLOVAKIA,SLOVAKIA,Europe,Europe-Pacific,Hungary,Europe East & South,Slovakia
+SI,SLOVENIA,SLOVENIA,Hungary,Europe-Pacific,Hungary,Europe East & South,Slovenia
+SB,SOLOMON ISLANDS,SOLOMON ISLANDS,ASPAC South,Europe-Pacific,Oceania,Oceania,Solomon Islands
+ES,SPAIN,SPAIN,Iberia,Europe-Pacific,Iberia,Iberia,Spain
+PM,"ST.PIER,MIQUEL.",Saint Pierre and Miquelon,Europe,Europe-Pacific,France,Europe North,Saint-Pierre-et-Miquelon
+SE,SWEDEN,SWEDEN,Nordic,Europe-Pacific,NordPol,Europe North,Sweden
+CH,SWITZERLAND,SWITZERLAND,DACH,Europe-Pacific,DACH,DACH,Switzerland
+TO,TONGA,TONGA,ASPAC South,Europe-Pacific,Oceania,Oceania,Tonga
+GB,UK,UNITED KINGDOM,UK,Europe-Pacific,UK,Europe North,United Kingdom
+GB,UNITED KINGDOM,UNITED KINGDOM,UK,Europe-Pacific,UK,Europe North,United Kingdom
+VU,VANUATU,Vanuatu,ASPAC South,Europe-Pacific,Oceania,Oceania,Vanuata
+VA,VATICAN CITY,VATICAN CITY,Europe,Europe-Pacific,Italy,Europe East & South,Vatican City
+WW,Almaty,Almaty,Almaty,Europe-Pacific,Almaty,Europe East & South,Almaty
+AM,ARMENIA,ARMENIA,Almaty,Europe-Pacific,Almaty,Europe East & South,Armenia
+AZ,AZERBAIJAN,AZERBAIJAN,Almaty,Europe-Pacific,Almaty,Europe East & South,Azerbaijan
+KZ,KAZAKHSTAN,KAZAKHSTAN,Almaty,Europe-Pacific,Almaty,Europe East & South,Kazakhstan
+KG,KYRGYZSTAN,KYRGYZSTAN,Almaty,Europe-Pacific,Almaty,Europe East & South,Kyrgyzstan
+MN,MONGOLIA,MONGOLIA,Almaty,Europe-Pacific,Almaty,Europe East & South,Mongolia
+TJ,TAJIKISTAN,TAJIKISTAN,Almaty,Europe-Pacific,Almaty,Europe East & South,Tajikistan
+TM,TURKMENISTAN,TURKMENISTAN,Almaty,Europe-Pacific,Almaty,Europe East & South,Turkmenistan
+UZ,UZBEKISTAN,UZBEKISTAN,Almaty,Europe-Pacific,Almaty,Europe East & South,Uzbekistan
+CA,CANADA,CANADA,Canada,North America,Canada,Canada,Canada
+US,NORTH AMERICA,USA,USA,North America,USA,USA,North America
+US,USA,USA,USA,North America,USA,USA,United States Of America
+US,XN,XN,USA,North America,USA,USA,USA
+WW,Not assigned,Not assigned,Not assigned,Not assigned,Not assigned,Rest of World others,N/A

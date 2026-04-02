@@ -1,6 +1,7 @@
 
 # Dependencies
-dashboard/node_modules/
+node_modules/
+**/node_modules/
 
 # Environment
 .env
@@ -13,3 +14,7 @@ dashboard/node_modules/
 # OS
 .DS_Store
 Thumbs.db
+
+# Large files
+Digital Radiology/Power BI Reports/Dashboards2/Partner Dashboard extracted_tables/FeedFile.csv
+Digital Radiology/Power BI Reports/Dashboards3/Commercial Analytics - Funnel Evolution Tracker extracted_tables/T funnel evolution tracker.csv

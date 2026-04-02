@@ -1,0 +1,5 @@
+Program,Top 5 KPIs
+Digital Radiology (DR),"OIT vs Budget [Region, Quarter, Forecast Flag], Pipeline Coverage [Region, Equipment Type], Weighted Amount DS% x DH% [Region, Forecast Flag, Deal Size Band], Actual SAP Margin [Product Line, Channel, Region], Standard Margin Sofon [Product, Deal, Region]"
+Digital Hydrogen (DH),"vs Budget % [Product, Year], Gross Margin % [Product Type, Year], Forecast Revision History [Forecast Category, Year], Quote Conversion Rate [Product, Year, Customer], Average Order Value [Product, Customer, Year]"
+DPS,"Budget Variance % [Budget Class, BU, Month], AMSP Margin % [Budget Class, Product Family], EBIT [BU, Period], OIT Units [Equipment Family, Period], Delayed Orders [Equipment Family, Region]"
+HE IT,"FY A+F vs FY BUD [BU, Region, Business Type], TACO Contribution Line 85 [Company Code, Period, Currency], TACO Margin % Line 55 [Company Code, Period], Rev Overdue > 6 Months [Region, Project, Quarter], YTD ACT vs YTD BUD [Region, BU, Business Type]"
